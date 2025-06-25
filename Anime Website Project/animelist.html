@@ -1,0 +1,205 @@
+<h1>Anime List</h1>
+<body>
+  <header>
+    <div class="container">
+     <nav>
+     <ul class="nav-link">
+         <li><a href="./index.html">Home</li>
+         <!-- <li><a href="./animelist.html">Anime List</a></li> -->
+         <li><a href="./contact.html">Contact</a></li>
+         <li><a href="./Login.html">Login</a></li>
+         <img src="./image/search (1).png" alt="search">
+      </ul>
+    </nav>
+    </div>
+</header>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: white;
+            font-family:'Segoe UI', sans-serif;
+            line-height: 1.6;
+        }
+
+        .container{
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header{
+            background-color: black;
+            padding: 20px 0;
+        }
+        
+        h1{
+            text-align: center;
+            color: red;
+        }
+         
+        .nav-link{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-link img{
+            height:30px;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .nav-link li{
+          margin: 10px;  
+        }
+
+        .nav-link a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .anime-section{
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .anime-grid{
+            display: grid;
+            grid-template-columns:repeat(auto-fit ,minmax(250px ,1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .anime-card{
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+        }
+
+        .anime-card img{
+            width: 100px;
+            border-radius: 10px;
+        }
+
+        .anime-card h3{
+            color: yellow;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 900px) {
+            .nav-link{
+                flex-direction: column;
+                align-items: center;
+            }
+            .anime-card p{
+                font-size: 20px;
+            }
+        }
+    </style>
+    <section class="anime-section">
+        <div class="container">
+            <div class="anime-grid">
+                <div class="anime-card">
+                    <img src="./image/onepiece.jpg" alt="One Piece"/>
+                    <h3>One Piece</h3>
+                    <p>The journy to become a king of the pirates</p>
+                </div>
+                <div class="anime-card">
+                    <img src="./image/dragonballz.jpg" alt="Dragon Ball Z"/>
+                    <h3>Dragon Ball Z</h3>
+                    <p>Goku fight to save his universe</p>
+                </div>
+                <div class="anime-card">
+                    <img src="./image/naruto.jpg" alt="Naruto Shipudden"/>
+                    <h3>Naruto Shipudden</h3>
+                    <p>The journy of a ninja to become the hokage</p>
+                </div>
+                <div class="anime-card">
+                    <img src="./image/demonslayer.jpg" alt="Demon Slayer"/>
+                    <h3>Demon Slayer</h3>
+                    <p>Tanjiro fight with the demons to save his sister</p>
+                </div>
+               <div class="anime-card">
+                    <img src="./image/banner/Vinland Saga.jpg" alt="Vinland"/>
+                    <h3>Vinland Saga</h3>
+                    <p>It is a journy of a boy to get the revenge for his dad killers</p>
+              </div>
+               <div class="anime-card">
+                 <img src="./image/banner/Solo leveling.jpg" alt="Solo Leveling"/>
+                 <h3>Solo Leveling</h3>
+                 <p>In this the hunters protect the world from demons</p>
+               </div>
+               <div class="anime-card">
+                    <img src="./image/banner/Bleach.jpg" alt="Bleach"/>
+                    <h3>Bleach</h3>
+                    <p>Solreapers fight with hollows to save inocent peoples</p>
+               </div>
+               <div class="anime-card">
+                <img src="./image/Death Note.jpg" alt="Death Note"/>
+                <h3>Death Note</h3>
+                <p>In this a death note has fallen from the hell to the earth</p>
+              </div>
+              <div class="anime-card">
+                <img src="./image/Attack on Titan.jpg" alt="Attack on Titan.jpg"/>
+                <h3>Attack on Titan.jpg</h3>
+                <p>In this the people fight with titans to save their life</p>
+              </div>
+              <div class="anime-card">
+                <img src="./image/Black Clover.jpg" alt="Black Clover"/>
+                <h3>Black Clover</h3>
+                <p>In this people use magic to fight against the demons</p>
+              </div>
+              <div class="anime-card">
+                <img src="./image/Baki.jpg" alt="Baki"/>
+                <h3>Baki</h3>
+                <p>In this there are few people with great physique & fight with each other</p>
+              </div>
+              <div class="anime-card">
+                <img src="./image/Bluelock.jpg" alt="Bluelock"/>
+                <h3>Bluelock</h3>
+                <p>It is a journy to become a best striker in the world</p>
+              </div>
+              <div class="anime-card">
+                <img src="./image/Class Of The Elite.jpg" alt="Class Of The Elite"/>
+                <h3>Class Of The Elite</h3>
+                <p>It is a journy to go to class-A </p>
+              </div>
+              <div class="anime-card">
+                <img src="./image/Bungo Stray Dogs.jpg" alt="Bungo Stray Dogs"/>
+                <h3>Bungo Stray Dogs</h3>
+                <p>In this the agency fight with the criminals</p>
+              </div>
+              <div class="anime-card">
+                <img src="./image/Hell's Paradise.jpg" alt="Hell's Paradise"/>
+                <h3>Hell's Paradise</h3>
+                <p>In this the hollow fight with gods to see his wife</p>
+              </div>
+              <div class="anime-card">
+                <img src="./image/Jujutsu Kaisen.jpg" alt="Jujutsu Kaisen"/>
+                <h3>Solo Leveling</h3>
+                <p>In this the people with powers fight with the monsters </p>
+              </div>
+              <div class="anime-card">
+                <img src="./image/One Punch Man.jpg" alt="One Punch Man"/>
+                <h3>One Punch Man</h3>
+                <p>In this the people with powers fight to get the high rank</p>
+              </div>
+              <div class="anime-card">
+                <img src="./image/Spy X Family.jpg" alt="Spy X Family"/>
+                <h3>Spy X Family</h3>
+                <p>In this the family try to hide their real identity from each other</p>
+              </div>
+            </div>
+        </div>
+    </section>
+</body>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+         <h1>Anime World</h1>
+         <nav>
+         <ul class="nav-link">
+             <li><a href="#">Home</li>
+             <li><a href="./animelist.html">Anime List</a></li>
+             <li><a href="./contact.html">Contact</a></li>
+             <li><a href="./Login.html">Login</a></li>
+             <img src="./image/search (1).png" alt="search">
+          </ul>
+        </nav>
+        </div>
+    </header>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: white;
+            font-family:'Segoe UI', sans-serif;
+            line-height: 1.6;
+        }
+
+        .container{
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header{
+            background-color: black;
+            padding: 20px 0;
+        }
+        
+        h1{
+            text-align: center;
+            color: red;
+        }
+         
+        .nav-link{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-link img{
+            height:30px;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .nav-link li{
+          margin: 10px;  
+        }
+
+        .nav-link a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .anime-section{
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .anime-grid{
+            display: grid;
+            grid-template-columns:repeat(auto-fit ,minmax(250px ,1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .anime-card{
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+        }
+
+        .anime-card img{
+            width: 100px;
+            border-radius: 10px;
+        }
+
+        .anime-card h3{
+            color: yellow;
+            margin: 10px 0;
+        }
+
+        footer{
+            padding: 20px;
+            margin-top: 40px;
+            background-color: blue;
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            .nav-link{
+                flex-direction: column;
+                align-items: center;
+            }
+            .anime-card p{
+                font-size: 20px;
+            }
+        }
+    </style>
+     
+    <section class="anime-section">
+        <div class="container">
+            <h2>Popular Anime</h2>
+            <div class="anime-grid">
+                <div class="anime-card">
+                    <img src="./image/onepiece.jpg" alt="One Piece"/>
+                    <h3>One Piece</h3>
+                    <p>The journy to become a king of the pirates</p>
+                </div>
+                <div class="anime-card">
+                    <img src="./image/dragonballz.jpg" alt="Dragon Ball Z"/>
+                    <h3>Dragon Ball Z</h3>
+                    <p>Goku fight to save his universe</p>
+                </div>
+                <div class="anime-card">
+                    <img src="./image/naruto.jpg" alt="Naruto Shipudden"/>
+                    <h3>Naruto Shipudden</h3>
+                    <p>The journy of a ninja to become the hokage</p>
+                </div>
+                <div class="anime-card">
+                    <img src="./image/demonslayer.jpg" alt="Demon Slayer"/>
+                    <h3>Demon Slayer</h3>
+                    <p>Tanjiro fight with the demons to save his sister</p>
+                </div>
+                </div>
+        </div>
+    </section>
+     
+    <footer>
+        <p>&copy; 2025 Anime World. All rights reserved. </p>
+    </footer>
+</body>
+</html>

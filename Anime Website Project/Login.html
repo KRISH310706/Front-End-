@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: black;
+      margin: 0;
+    }
+
+    .container {
+      width: 350px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .form-container {
+      display: flex;
+      width: 200%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .form {
+      width: 50%;
+      padding: 30px;
+    }
+
+    .form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form button {
+      width: 100%;
+      padding: 10px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .toggle {
+      display: flex;
+      justify-content: center;
+      background: #eee;
+      padding: 10px;
+    }
+
+    .toggle label {
+      margin: 0 10px;
+      cursor: pointer;
+      color: #555;
+    }
+    
+      .toggle label[for="toggle-form"]::before {
+      content: "Don't have an account? Sign Up";
+    }
+  </style> 
+ </head>
+<body>
+ <input type="checkbox" id="toggle-form">
+    <div class="container">
+      <div class="form-container">
+          <div class="form login-form">
+             <h1>Login</h1>
+             <input type="emai" placeholder="Email" required>
+             <input type="password" placeholder="Password" required>
+             <button>Login</button>
+            </div>
+
+            <div class="form signup-form">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button>Sign Up</button>
+            </div>
+        </div> 
+         
+        <div class="toggle">
+            <label for="toggle-form"></label>
+        </div>
+   </div>
+</body>
+</html>
